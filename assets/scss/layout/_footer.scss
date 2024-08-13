@@ -1,4 +1,130 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  @include mobile-small {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+}
+
+.nav-media-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 48px;
+  margin-bottom: 24px;
+  @include mobile-small {
+    padding-top: 0;
+    .hidden {
+      display: none;
+    }
+  }
+}
+
+.footer-nav-menu {
+  display: flex;
+  gap: 48px;
+  a {
+    color: #ffffff;
+  }
+}
+
+.media {
+  &-menu {
+    display: flex;
+    gap: 32px;
+    @include mobile-larger {
+      gap: 16px;
+    }
+    @include mobile-small {
+      gap: 8px;
+    }
+  }
+  &-item {
+    @include mobile-larger {
+      width: 40px;
+      height: auto;
+    }
+    @include mobile-small {
+      width: 24px;
+      height: auto;
+    }
+    img {
+      width: 48px;
+    }
+  }
+}
+
+.contact {
+  &-container {
+    margin-bottom: 32px;
+    @include mobile-small {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-menu {
+    li {
+      display: flex;
+      gap: 22px;
+      @include mobile-small {
+        gap: 11px;
+      }
+      a {
+        font-size: 36px;
+        color: #ffffff;
+        @include mobile-small {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &-image {
+    @include mobile-small {
+      width: 20px;
+    }
+  }
+}
+
+.hr {
+  margin-bottom: 32px;
+  @include mobile-larger {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  @include mobile-small {
+    margin-bottom: 20px;
+    margin-left: 13px;
+    margin-right: 14px;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  @include mobile-small {
+    flex-direction: column;
+  }
+  p {
+    color: #ffffff;
+  }
+}
+
+.terms {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 32px;
+  @include mobile-small {
+    flex-direction: column;
+    justify-content: normal;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+  a {
+    color: #ffffff;
+  }
 }
