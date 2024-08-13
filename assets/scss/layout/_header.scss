@@ -1,4 +1,54 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav {
+  &-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile-larger {
+      max-width: 100%;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+    @include mobile-small {
+      flex-direction: column;
+      align-items: normal;
+      padding-left: 0;
+      padding-right: 0;
+      flex-wrap: wrap;
+      padding-bottom: 0;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    gap: 64px;
+    @include mobile-small {
+      flex-wrap: wrap;
+      gap: 0;
+      li {
+        width: 50%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        border: 1px #ffffff solid;
+      }
+    }
+    a {
+      font-size: 20px;
+      color: #ffffff;
+      @include mobile-small {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.logo-image {
+  width: 80px;
+  @include mobile-small {
+    align-self: flex-start;
+    padding-left: 15px;
+    padding-bottom: 16px;
+  }
 }
