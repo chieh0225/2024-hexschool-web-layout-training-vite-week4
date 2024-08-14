@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>門市據點</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -19,8 +15,63 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px" alt="cat" />
+    <div class="store container">
+      <h1 class="content-title">門市據點</h1>
+      <div class="store-search">
+        <label for="branchs" class="store-search-label">選擇分店</label>
+        <select name="store-branch" id="branchs" class="store-search-select">
+          <option value="" disabled>選擇地區</option>
+          <option value="taipei-zhongshan-flagship" selected>
+            台北中山旗艦店
+          </option>
+          <option value="taipei-green-garden">台北綠園店</option>
+          <option value="taichung-qingshui-flagship">台中清水旗艦店</option>
+          <option value="kaohsiung-zhongzheng-image">高雄中正形象店</option>
+          <option value="kaohsiung-dream-mall">高雄夢時代店</option>
+        </select>
+      </div>
+
+      <div class="selected-store container">
+        <div class="card">
+          <img
+            src="/assets/images/week3-4/store-1.png"
+            alt="taipei-zhongshan-flagship"
+            class="store-img"
+          />
+          <div class="card-body">
+            <h2 class="card-title">台北中山旗艦店</h2>
+            <address>
+              <ul class="store-info">
+                <li class="telephone-number">
+                  <img
+                    src="/assets/images/week3-4/call_24dp_212529.svg"
+                    alt="call icon"
+                  />
+                  <a href="tel:(02)000-1234">電話：(02)000-1234</a>
+                </li>
+                <li class="business-hours">
+                  <img
+                    src="/assets/images/week3-4/schedule_24dp_212529.svg"
+                    alt="time icon"
+                  />
+                  <span>營業時間：10:00-21:00</span>
+                </li>
+                <li class="store-address">
+                  <img
+                    src="/assets/images/week3-4/place_24dp_212529.svg"
+                    alt="place icon"
+                  />
+                  <span class="address-line"
+                    >地址：台北市中山區南京東路25巷2-1號</span
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <img src="/assets/images/week3-4/map-1.png" alt="map" class="map-img" />
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 

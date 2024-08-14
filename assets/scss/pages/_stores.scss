@@ -1,0 +1,160 @@
+.store {
+  padding-top: 96px;
+  padding-bottom: 80px;
+  @include mobile-larger {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include mobile-small {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+}
+
+.content-title {
+  border-left: 8px solid #9f1213;
+  font-size: 48px;
+  font-weight: bold;
+  padding-left: 16px;
+  margin-bottom: 32px;
+  @include mobile-small {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.store-search {
+  display: flex;
+  margin-bottom: 40px;
+  @include mobile-small {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &-label {
+    font-size: 24px;
+    margin-right: 16px;
+    @include mobile-small {
+      font-size: 16px;
+      margin-right: 0px;
+    }
+  }
+
+  &-select {
+    width: 304px;
+    font-size: 18px;
+    color: rgb(73, 80, 87, 0.75);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    border: 1px solid #ced4da;
+    appearance: none;
+    position: relative;
+    background: url(/assets/images/week3-4/select-arrow.svg);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    @include mobile-small {
+      width: 276px;
+    }
+  }
+}
+
+.selected-store {
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  @include mobile-larger {
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  flex: 526;
+  display: flex;
+  flex-direction: column;
+  @include mobile-larger {
+    flex-direction: row;
+    gap: 24px;
+  }
+  @include mobile-small {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+.card-body {
+  @include mobile-larger {
+    width: 50%;
+  }
+  @include mobile-small {
+    width: 100%;
+  }
+}
+
+.card-title {
+  color: #212529;
+  font-size: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  border: 1px solid #00000020;
+}
+
+.store-info {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #212529;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid #00000020;
+  li {
+    display: flex;
+  }
+  a {
+    color: #212529;
+  }
+}
+
+.store-img {
+  display: block;
+  @include mobile-larger {
+    width: 50%;
+  }
+  @include mobile-small {
+    width: 100%;
+  }
+}
+.map-img {
+  flex: 746;
+  display: block;
+}
+
+.telephone-number img {
+  margin-left: 27px;
+  margin-right: 11px;
+}
+.business-hours img {
+  margin-left: 26px;
+  margin-right: 10px;
+}
+.store-address img {
+  margin-left: 27px;
+  margin-right: 12px;
+  margin-top: 3px;
+}
+
+.store-address {
+  display: flex;
+  font-size: 20px;
+  align-items: flex-start;
+}
+
+.address-line {
+  display: block; /* 使地址成為區塊元素 */
+  white-space: pre-wrap; /* 保持換行 */
+  margin-right: 24px;
+}
