@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>門市據點</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script type="module" crossorigin src="/2024-hexschool-web-layout-training-week4-vite/assets/main-6e0ddd63.js"></script>
-    <link rel="stylesheet" href="/2024-hexschool-web-layout-training-week4-vite/assets/main-917fc613.css">
+    <script type="module" crossorigin src="/2024-hexschool-web-layout-training-week4-vite/assets/main-2632306b.js"></script>
+    <link rel="stylesheet" href="/2024-hexschool-web-layout-training-week4-vite/assets/main-31ce6aea.css">
   </head>
   <body>
     <nav class="bg-red">
@@ -32,7 +28,7 @@
           <a href="#">系列鏡框</a>
         </li>
         <li>
-          <a href="#">門市據點</a>
+          <a href="./stores.html">門市據點</a>
         </li>
         <li>
           <a href="#">部落格</a>
@@ -45,17 +41,72 @@
   </div>
 </nav>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/2024-hexschool-web-layout-training-week4-vite/assets/cat-0c0689ae.jpg" style="width: 300px" alt="cat" />
+    <div class="store container">
+      <h1 class="content-title">門市據點</h1>
+      <div class="store-search">
+        <label for="branchs" class="store-search-label">選擇分店</label>
+        <select name="store-branch" id="branchs" class="store-search-select">
+          <option value="" disabled>選擇地區</option>
+          <option value="taipei-zhongshan-flagship" selected>
+            台北中山旗艦店
+          </option>
+          <option value="taipei-green-garden">台北綠園店</option>
+          <option value="taichung-qingshui-flagship">台中清水旗艦店</option>
+          <option value="kaohsiung-zhongzheng-image">高雄中正形象店</option>
+          <option value="kaohsiung-dream-mall">高雄夢時代店</option>
+        </select>
+      </div>
+
+      <div class="selected-store container">
+        <div class="card">
+          <img
+            src="/2024-hexschool-web-layout-training-week4-vite/assets/store-1-e8e7cac3.png"
+            alt="taipei-zhongshan-flagship"
+            class="store-img"
+          />
+          <div class="card-body">
+            <h2 class="card-title">台北中山旗艦店</h2>
+            <address>
+              <ul class="store-info">
+                <li class="telephone-number">
+                  <img
+                    src="/2024-hexschool-web-layout-training-week4-vite/assets/call_24dp_212529-e3f16b2a.svg"
+                    alt="call icon"
+                  />
+                  <a href="tel:(02)000-1234">電話：(02)000-1234</a>
+                </li>
+                <li class="business-hours">
+                  <img
+                    src="/2024-hexschool-web-layout-training-week4-vite/assets/schedule_24dp_212529-688f8c4a.svg"
+                    alt="time icon"
+                  />
+                  <span>營業時間：10:00-21:00</span>
+                </li>
+                <li class="store-address">
+                  <img
+                    src="/2024-hexschool-web-layout-training-week4-vite/assets/place_24dp_212529-2673bad1.svg"
+                    alt="place icon"
+                  />
+                  <span class="address-line"
+                    >地址：台北市中山區南京東路25巷2-1號</span
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <img src="/2024-hexschool-web-layout-training-week4-vite/assets/map-1-534f1e04.png" alt="map" class="map-img" />
+      </div>
+    </div>
 
     <footer class="bg-red">
   <div class="footer-container container">
     <div class="nav-media-container">
       <div class="hidden">
         <ul class="footer-nav-menu">
-          <li><a href="#">首頁</a></li>
+          <li><a href="./index.html">首頁</a></li>
           <li><a href="#">系列鏡框</a></li>
-          <li><a href="#">門市據點</a></li>
+          <li><a href="./stores.html">門市據點</a></li>
           <li><a href="#">部落格</a></li>
           <li><a href="./faq.html">常見問題</a></li>
         </ul>
@@ -85,7 +136,7 @@
     </div>
     <div class="contact-container">
       <ul class="contact-menu">
-        <li>
+        <li class="contact-tel">
           <img
             src="/2024-hexschool-web-layout-training-week4-vite/assets/call_36dp_FFFFFF_FILL0_wght400_GRAD0_opsz40-65e6b0c0.svg"
             alt=""
