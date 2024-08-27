@@ -11,8 +11,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script type="module" crossorigin src="/2024-hexschool-web-layout-training-week4-vite/assets/main-fc82a081.js"></script>
-    <link rel="stylesheet" href="/2024-hexschool-web-layout-training-week4-vite/assets/main-37b0979f.css">
+    <script type="module" crossorigin src="/2024-hexschool-web-layout-training-week4-vite/assets/main-6d4f028b.js"></script>
+    <link rel="stylesheet" href="/2024-hexschool-web-layout-training-week4-vite/assets/main-5b3d994b.css">
   </head>
   <body>
     <nav class="bg-red">
@@ -43,7 +43,7 @@
 
     <div class="store container">
       <h1 class="content-title">門市據點</h1>
-      <div class="store-search">
+      <div class="store-search tc-font">
         <label for="branchs" class="store-search-label">選擇分店</label>
         <select name="store-branch" id="branchs" class="store-search-select">
           <option value="" disabled>選擇地區</option>
@@ -59,11 +59,12 @@
 
       <div class="selected-store container">
         <div class="card">
-          <img
-            src="/2024-hexschool-web-layout-training-week4-vite/assets/store-1-e8e7cac3.png"
-            alt="taipei-zhongshan-flagship"
-            class="store-img"
-          />
+          <div class="store-img">
+            <img
+              src="/2024-hexschool-web-layout-training-week4-vite/assets/store-1-e8e7cac3.png"
+              alt="taipei-zhongshan-flagship"
+            />
+          </div>
           <div class="card-body">
             <h2 class="card-title">台北中山旗艦店</h2>
             <address>
@@ -95,7 +96,15 @@
             </address>
           </div>
         </div>
-        <img src="/2024-hexschool-web-layout-training-week4-vite/assets/map-1-534f1e04.png" alt="map" class="map-img" />
+        <div class="map-img">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/2024-hexschool-web-layout-training-week4-vite/assets/map-2x-dc2516bb.png "
+            />
+            <img src="/2024-hexschool-web-layout-training-week4-vite/assets/map-1-534f1e04.png" alt="map" />
+          </picture>
+        </div>
       </div>
     </div>
 
