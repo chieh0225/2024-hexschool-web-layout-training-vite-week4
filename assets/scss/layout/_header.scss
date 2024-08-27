@@ -10,7 +10,7 @@
       padding-left: 36px;
       padding-right: 36px;
     }
-    @include mobile-small {
+    @include mobile {
       flex-direction: column;
       align-items: normal;
       padding-left: 0;
@@ -23,7 +23,7 @@
   &-menu {
     display: flex;
     gap: 64px;
-    @include mobile-small {
+    @include mobile {
       flex-wrap: wrap;
       gap: 0;
       li {
@@ -37,7 +37,7 @@
     a {
       font-size: 20px;
       color: #ffffff;
-      @include mobile-small {
+      @include mobile {
         font-size: 16px;
       }
     }
@@ -46,7 +46,7 @@
 
 .logo-image {
   width: 80px;
-  @include mobile-small {
+  @include mobile {
     align-self: flex-start;
     padding-left: 15px;
     padding-bottom: 16px;

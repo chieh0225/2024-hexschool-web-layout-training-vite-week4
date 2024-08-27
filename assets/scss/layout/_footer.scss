@@ -1,7 +1,7 @@
 .footer-container {
   display: flex;
   flex-direction: column;
-  @include mobile-small {
+  @include mobile {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
@@ -15,7 +15,7 @@
   justify-content: space-between;
   padding-top: 48px;
   margin-bottom: 24px;
-  @include mobile-small {
+  @include mobile {
     padding-top: 0;
     .hidden {
       display: none;
@@ -38,7 +38,7 @@
     @include mobile-larger {
       gap: 16px;
     }
-    @include mobile-small {
+    @include mobile {
       gap: 8px;
     }
   }
@@ -47,7 +47,7 @@
       width: 40px;
       height: auto;
     }
-    @include mobile-small {
+    @include mobile {
       width: 24px;
       height: auto;
     }
@@ -60,7 +60,7 @@
 .contact {
   &-container {
     margin-bottom: 32px;
-    @include mobile-small {
+    @include mobile {
       margin-bottom: 20px;
     }
   }
@@ -69,13 +69,13 @@
     li {
       display: flex;
       gap: 22px;
-      @include mobile-small {
+      @include mobile {
         gap: 11px;
       }
       a {
         font-size: 36px;
         color: #ffffff;
-        @include mobile-small {
+        @include mobile {
           font-size: 16px;
         }
       }
@@ -87,7 +87,7 @@
   }
 
   &-image {
-    @include mobile-small {
+    @include mobile {
       width: 20px;
     }
   }
@@ -99,7 +99,7 @@
     margin-left: 36px;
     margin-right: 36px;
   }
-  @include mobile-small {
+  @include mobile {
     margin-bottom: 20px;
     margin-left: 13px;
     margin-right: 14px;
@@ -109,7 +109,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  @include mobile-small {
+  @include mobile {
     flex-direction: column;
   }
   p {
@@ -121,7 +121,7 @@
   display: flex;
   gap: 48px;
   margin-bottom: 32px;
-  @include mobile-small {
+  @include mobile {
     flex-direction: column;
     justify-content: normal;
     gap: 8px;

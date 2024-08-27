@@ -17,7 +17,7 @@
 
     <div class="store container">
       <h1 class="content-title">門市據點</h1>
-      <div class="store-search">
+      <div class="store-search tc-font">
         <label for="branchs" class="store-search-label">選擇分店</label>
         <select name="store-branch" id="branchs" class="store-search-select">
           <option value="" disabled>選擇地區</option>
@@ -33,11 +33,12 @@
 
       <div class="selected-store container">
         <div class="card">
-          <img
-            src="/assets/images/week3-4/store-1.png"
-            alt="taipei-zhongshan-flagship"
-            class="store-img"
-          />
+          <div class="store-img">
+            <img
+              src="/assets/images/week3-4/store-1.png"
+              alt="taipei-zhongshan-flagship"
+            />
+          </div>
           <div class="card-body">
             <h2 class="card-title">台北中山旗艦店</h2>
             <address>
@@ -69,7 +70,15 @@
             </address>
           </div>
         </div>
-        <img src="/assets/images/week3-4/map-1.png" alt="map" class="map-img" />
+        <div class="map-img">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/images/week3-4/map-2x.png"
+            />
+            <img src="/assets/images/week3-4/map-1.png" alt="map" />
+          </picture>
+        </div>
       </div>
     </div>
 
