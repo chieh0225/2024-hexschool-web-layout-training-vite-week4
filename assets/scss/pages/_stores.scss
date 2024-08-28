@@ -89,7 +89,8 @@
 
 .card-body {
   max-width: 526px;
-  height: 100%;
+  // height: 100%; 導致區塊收縮
+  height: auto; //修正與圖片不等高問題
   display: flex;
   flex-direction: column;
   flex: 1;
